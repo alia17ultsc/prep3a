@@ -1,0 +1,61 @@
+.classTitle{
+  font-size: 7vw;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+.icon{
+  width: 7vw;
+  position: absolute;
+  top: 3vh;
+  left: 3vw;
+}
+
+.mainSchedule{
+  display: flex;
+  width: 94vw;
+ /* height: 50vh;*/
+  border: 3px black solid;
+  margin-left: 2.3vw;
+}
+
+.column{
+  border: 2px black solid;
+  width: 9.4vw;
+}
+
+.cell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+  height: 12vh;
+  font-size: 1.7vw;
+}
+
+.firstRow{
+  height: 8vh;
+  flex-direction: column;
+}
+
+.up{
+  border-bottom: 1px black solid;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.down{
+  display: flex;
+  justify-content: center;
+  border-top: 1px black solid;
+  width: 100%;
+}
+
+
+.doubleCell{
+  flex-direction: column;
+}

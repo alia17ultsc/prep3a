@@ -1,0 +1,72 @@
+@font-face {
+  font-family: titleFont;
+  src: url(/fonts/quadranta-regular.woff2);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.maincont{
+
+  margin-top: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  justify-content: space-evenly;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20vw;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.backgroundLogo{
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  margin-left: 25vw;;
+}
+
+.logoImg{
+  opacity: 0.5;
+  width: 50vw;
+}
+
+.btnIcon{
+  width: 15vw;
+}
+
+icontitle{
+  margin-top: 1vh;
+  font-size: 1.8vw;
+}
+
+.openOption{
+  padding: 0.7vw;
+  border-radius: 25px;
+  margin-bottom: 1.5vh;
+  font-size: 1.3vw;
+}
+
+.titlecont{
+  display: flex;
+  justify-content: center;
+}
+
+h2{
+  position: absolute;
+  top: 3vh;
+  font-family: 'titleFont', sans-serif;
+  font-size: 5vw;
+}
