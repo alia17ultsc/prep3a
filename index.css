@@ -1,3 +1,7 @@
+:root{
+  --vhvw: calc(1vh + 1vw);
+}
+
 @font-face {
   font-family: titleFont;
   src: url(/fonts/quadranta-regular.woff2);
@@ -30,17 +34,17 @@
 
 .backgroundLogo{
   position: absolute;
-  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: -1;
-  margin-left: 25vw;;
+  height: 100vh;
 }
 
 .logoImg{
   opacity: 0.5;
-  width: 50vw;
+  width: calc(var(--vhvw)*30);
 }
 
 .btnIcon{
@@ -62,11 +66,37 @@ icontitle{
 .titlecont{
   display: flex;
   justify-content: center;
+
 }
 
 h2{
   position: absolute;
   top: 3vh;
   font-family: 'titleFont', sans-serif;
-  font-size: 5vw;
+  font-size: calc(var(--vhvw)*2.5);
+}
+
+@media only screen and (max-width: 500px){
+  body{
+    display: flex;
+    justify-content: center;
+  }
+  h2{
+  }
+  .maincont{
+    width: 70vw;
+    flex-wrap: wrap;
+  }
+  .menu{
+    margin-bottom: 2vh;
+    width: 30vw;
+  }
+  .titlecont{
+    display: contents;
+  }
+}
+
+@media only screen and (min-width: 500px){
+  h2{
+  }
 }
